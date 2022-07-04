@@ -8,10 +8,28 @@ public class CricketScore {
      */
 
     public String winnerOfSeriesCalculation(int totalScore1, int totalScore2, int totalScore3) {
-        String winner = (totalScore1 > totalScore2) ? ((totalScore1 > totalScore3) ? "Australia is winner" : "New Zealand is winner") : (totalScore2 > totalScore3) ? "England is winner" : "New Zealand is winner";
-
-        return winner;
+        return (totalScore1 > totalScore2) ? ((totalScore1 > totalScore3) ? "Australia is winner" : "New Zealand is winner") : (totalScore2 > totalScore3) ? "England is winner" : "New Zealand is winner";
     }
-
-
 }
+/**
+ * if t1>t2 and (&&) t1>t3 aus is win, else
+ *     if (t1>t2)
+ *     {
+ *     if(t1>t3)
+ *     {aus is winner}
+ *     else
+ *     {new z is winner}
+ *     }
+ *     else if(t2>t1)
+ *     {
+ *     if (t2>t3)
+ *     {eng is winner}
+ *     else {new z is winner}
+ *
+ *     }
+ *      else if {
+ *
+ *      }
+ *
+ *
+ */
